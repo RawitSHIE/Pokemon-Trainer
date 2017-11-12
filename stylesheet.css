@@ -137,3 +137,15 @@ input[type=text]:focus {
 .vertical-center-left h1{
     font-size: 5rem;
 }
+
+.propic-row{
+    background-color: rgba(48, 48, 48, 0.61);
+    width: 100%;
+}
+
+.propic-row img{
+    width: 100%;
+    padding-left: 10%;
+    padding-right:10%;
+
+}
