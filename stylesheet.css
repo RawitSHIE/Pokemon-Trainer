@@ -28,11 +28,14 @@ body,html{
 
 /* top na bar */
 .topnav {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topnav a {
@@ -42,14 +45,15 @@ body,html{
     text-align: center;
     padding: 10px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
 }
-.home{
-    background-color: rgba(32, 32, 32, 0.301);
+#home{
+    background-color: rgba(53, 53, 53, 0.705);
+    font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: rgba(70, 70, 70, 0.411);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
 }
 
@@ -108,14 +112,28 @@ input[type=text]:focus {
 
 
 /* footer */
-.footer{
-    background-color: rgba(37, 37, 37, 0.733)
+.custom-j div{
+    color: rgb(255, 255, 255);
 }
-footer div{
-    color: white;
+
+.cus-row{
+    padding: 5px;
 }
-.jumpoton{
+.custom-j{
     padding-top: 10px;
     padding-bottom: 10px;
-    margin:0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+/* Ours page */
+.vertical-center-left {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.vertical-center-left h1{
+    font-size: 5rem;
 }
