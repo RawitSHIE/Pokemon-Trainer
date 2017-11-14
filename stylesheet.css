@@ -189,3 +189,20 @@ input[type=text]:focus {
     position:relative;
     width: 100%;
   }
+
+.hor-cen{
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.git{
+    width:100px; 
+    margin:0%;
+}
+
+.git :hover{
+    width:100px; 
+    margin:0%;
+    src: "Img/logo.png";
+} 
