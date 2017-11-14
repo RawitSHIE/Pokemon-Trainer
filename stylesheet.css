@@ -32,7 +32,7 @@ body,html{
     overflow: hidden;
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 100%;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +119,7 @@ input[type=text]:focus {
 .cus-row{
     padding: 5px;
 }
+
 .custom-j{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -141,11 +142,17 @@ input[type=text]:focus {
 .propic-row{
     background-color: rgba(48, 48, 48, 0.61);
     width: 100%;
-}
+    display: Flex;
+    align-items: center;
+    justify-content: center;
 
+}
 .propic-row img{
     width: 100%;
-    padding-left: 10%;
-    padding-right:10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.propic-row p{
+    font-size: 1rem;
 }
