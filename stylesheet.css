@@ -63,6 +63,20 @@ body,html{
     color: white;
 }
 
+.bg-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
+    background-size: cover;
+    transition: 1s opacity;
+}
 
 /* video */
 video {
@@ -156,3 +170,22 @@ input[type=text]:focus {
 .propic-row p{
     font-size: 1rem;
 }
+
+#top-ab{
+    background: linear-gradient( rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.781) ),  url(http://altinyapim.com/images/Upload/939a7bf9f9074ac496dd9456b9224c85.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+#tool-ab{
+    background: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.781)), url(http://www.markstudioindia.com/adminpanel/upload/3511404972video-editing-studio.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+}
+.hero, .content{
+    text-align:center; 
+    position:relative;
+    width: 100%;
+  }
