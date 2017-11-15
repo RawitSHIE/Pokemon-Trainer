@@ -199,10 +199,36 @@ input[type=text]:focus {
 .git{
     width:100px; 
     margin:0%;
+    height: 100px
 }
 
-.git :hover{
-    width:100px; 
-    margin:0%;
-    src: "Img/logo.png";
-} 
+ 
+
+.over {
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.over:hover {
+    background: #696969;
+    border-radius: 6px;
+
+    box-shadow: 0 5px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transition: all .1s linear;
+  }
+
+.over:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+  }
+  
+.over:hover img{
+    src: 'Img/logo-2.svg'
+}
