@@ -154,7 +154,7 @@ input[type=text]:focus {
 }
 
 .propic-row{
-    background-color: rgba(48, 48, 48, 0.61);
+    background-color: rgb(163, 163, 163);
     width: 100%;
     display: Flex;
     align-items: center;
@@ -217,7 +217,7 @@ input[type=text]:focus {
     background: #696969;
     border-radius: 6px;
 
-    box-shadow: 0 5px 0 #006599;
+    box-shadow: 0 5px 0 #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
@@ -225,10 +225,60 @@ input[type=text]:focus {
   }
 
 .over:active {
-    box-shadow: 0 2px 0 #006599;
+    box-shadow: 0 3px 0 #aaaaaa;
     transform: translateY(3px);
   }
   
-.over:hover img{
-    src: 'Img/logo-2.svg'
+.img{
+    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/github-svg.svg');
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
+}
+
+.over:hover .img{
+    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/logo-2.png');
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
+    
+}
+
+.over:active .img{
+    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/logo-3.png');
+    background-size: 100px 100px;
+}
+
+.contact{
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 12px;
+    margin: 12px;
+}
+
+.contact:hover{
+    background: #696969;
+    border-radius: 6px;
+
+    box-shadow: 0 0 20px 0px #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+.contact:active{
+    box-shadow: 0 0 40px 0px #aaaaaa;
+    /* transform: translateY(5px); */
+    /* transition: all 200ms ease-in; */
+    transform: scale(1.1);
+}
+
+.contact:hover img{
+    border-color: white;
+    border-width: 2px;
 }
