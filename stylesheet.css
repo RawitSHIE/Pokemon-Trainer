@@ -255,7 +255,7 @@ input[type=text]:focus {
   }
   
 .img{
-    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/github-svg.svg');
+    background-image: url('./Img/github-svg.svg');
     background-size: 100px 100px;
     transition-property: background-image;
     transition-duration: .1s, .1s;
@@ -263,7 +263,7 @@ input[type=text]:focus {
 }
 
 .over:hover .img{
-    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/logo-2.png');
+    background-image: url('./Img/logo-2.png');
     background-size: 100px 100px;
     transition-property: background-image;
     transition-duration: .1s, .1s;
@@ -272,7 +272,7 @@ input[type=text]:focus {
 }
 
 .over:active .img{
-    background-image: url('file:///C:/Users/Rawitgun/Desktop/ITF/Img/logo-3.png');
+    background-image: url('./Img/logo-3.png');
     background-size: 100px 100px;
 }
 
