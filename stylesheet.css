@@ -154,7 +154,7 @@ input[type=text]:focus {
 }
 
 .propic-row{
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: Flex;
     align-items: center;
@@ -170,6 +170,31 @@ input[type=text]:focus {
 .propic-row p{
     font-size: 1rem;
 }
+
+.toolpic-row{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+
+}
+.toolpic-row img{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.toolpic-row p{
+    font-size: 1rem;
+}
+.toolpic-row div{
+    width: 100%;
+    margin: 0%;
+    padding: 20px;
+}
+
 
 #top-ab{
     background: linear-gradient( rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.781) ),  url(http://altinyapim.com/images/Upload/939a7bf9f9074ac496dd9456b9224c85.jpg);
@@ -256,7 +281,7 @@ input[type=text]:focus {
     transition-duration: .2s, 1s;
     transition-timing-function: linear;
     padding: 12px;
-    margin: 12px;
+    margin: 9px;
 }
 
 .contact:hover{
@@ -281,4 +306,108 @@ input[type=text]:focus {
 .contact:hover img{
     border-color: white;
     border-width: 2px;
+}
+
+
+.tool-1{
+    /* background-color: rgba(82, 3, 138, 0.986); */
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    height: 100%;
+
+}
+
+.tool-1:hover{
+    background: rgba(58, 0, 97, 0.986);
+
+    box-shadow: 0 0 20px 0px #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    
+}
+
+.tool-1:hover img{
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+
+.tool-2{
+    /* background-color: #928405; */
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    height: 100%;
+}
+
+.tool-2:hover{
+    background: #685e01;
+
+    box-shadow: 0 0 20px 0px #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+ 
+}
+
+.tool-2:hover img{
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+.tool-3{
+    /* background-color: #9b3e16; */
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    height: 100%;
+}
+
+.tool-3:hover{
+    background: #692a0d;
+
+    box-shadow: 0 0 20px 0px #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+ 
+}
+
+.tool-3:hover img{
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+
+.tool-4{
+    /* background-color: #1b799e; */
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    height: 100%;
+}
+
+.tool-4:hover{
+    background: #212e50;
+
+    box-shadow: 0 0 20px 0px #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+ 
+}
+
+.tool-4:hover img{
+    border-color: white;
+    border-width: 2px;
+    transform: scale(1.05);
+    transition: all .2s linear;
 }
