@@ -38,8 +38,8 @@
           
           </video>
               <br>
-          <form method="get" action="http://www.google.com/search">
-              <input type="text" name="q=" placeholder="Gotcha!">
+          <form method="get" action="/show">
+              <input type="text" name="pokemon" placeholder="Gotcha!">
           </form>
     </div>
     </header>

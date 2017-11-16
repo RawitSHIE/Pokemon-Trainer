@@ -79,15 +79,20 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{ $data->name }}
                 </div>
+                <img src="{{asset("img/pokemon")}}/{{$data->name}}.jpg">
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <span>HP : {{$data->hp}}</span>
+                    <span>Attack : {{$data->attack}}</span>
+                    <span>Defense : {{$data->defense}}</span>
+                    <span>Speed : {{$data->speed}}</span>
+                    <span>Type 1 : {{$data->type_1}}</span>
+                    @if($data->type_2 == "")
+                    {{ $data->type_2 = "none" }}
+                    @endif
+                    <span>Type 2 : {{$data->type_2}}</span>                    
                 </div>
             </div>
         </div>
