@@ -13,17 +13,15 @@
   </head>
   <body>
     <!--nav bar -->
-    <div class="topnav">
-        <a href="">News</a>
+    <div class="topnav first">
         <a id="home" href="/">Home</a>
-        <a href="/about">Ours</a>
     </div>
     <!-- Body -->
     <header class="header" id="top-ab">
       <div class="vertical-center-left">
           <div style= "background-color: transparent;">
               <h1 style="color:rgb(255, 255, 255)">Our Team</h1>
-              <h4 class="col-sm-8"style="color:rgb(192, 192, 192)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ut illum, unde nesciunt illo quas eveniet. Quam natus maiores recusandae, iusto, perspiciatis saepe quidem aperiam consectetur sapiente odit dolores sequi.</h4>
+              <h4 class="col-sm-8"style="color:rgb(192, 192, 192)">Teamwork makes the dream work.</h4>
           </div>
         </div>
     </header>
@@ -38,26 +36,26 @@
       align-items: center;
       ">
           
-          <div class="col-sm-2 col-xs-12 contact" style="width:100%">
+          <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%">
               <img src="{{ asset('img/IMG_2320.jpg') }}" style=" border-radius: 50%;">
               <p style="text-align:center;"><h3 style="margin:0%">Rawit</h3><p style="font-size:1.35vw;">Lohakhachornphan</p></p>
           </div>
-          <div class="col-sm-2 col-xs-12 contact">
+          <div class="col-lg-2 col-sm-4 col-12 contact-pro">
               <img src=" {{ asset('img/22853030_2026290980939434_2408154047844841499_n.jpg') }}" style=" border-radius: 50%;">
               <p style="text-align:center;"><h3 style="margin:0%">Passawit</h3><p style="font-size:1.35vw;">Riewthong</p></p>
           </div>
-          <div class="col-sm-2 col-xs-12 contact">
+          <div class="col-lg-2 col-sm-4 col-12 contact-pro">
               <img src="{{ asset('img/S__27459591.jpg') }}" style=" border-radius: 50%;">
               <p style="text-align:center;"><h3 style="margin:0%">Ratanon</h3><p style="font-size:1.35vw;">Jantanasukon</p></p>
             </div>
-          <div class="col-sm-2 col-xs-12 contact">
-              <img src="{{ asset('img/mareena2.jpg') }}" style=" border-radius: 50%;">
+          <div class="col-lg-2 col-sm-4 col-12 contact-pro">
+              <img src="{{ asset('img/mareena.jpg') }}" style=" border-radius: 50%;">
               <!-- <img src="img/mareena.jpg" style=" border-radius: 50%;"> -->
               <p style="text-align:center;"><h3 style="margin:0%">Mareena</h3><p style="font-size:1.35vw;">Nuramun</p></p>
           </div>
-          <div class="col-sm-2 col-xs-12 contact">
+          <div class="col-lg-2 col-sm-4 col-12 contact-pro">
               <img src="{{ asset('img/jiw.jpg') }}" style=" border-radius: 50%;">
-              <p style="text-align:center;"><h3 style="margin:0%">Rawit</h3><p style="font-size:1.35vw;">Lohakhachornphan</p></p>
+              <p style="text-align:center;"><h3 style="margin:0%">Onruethai</h3><p style="font-size:1.35vw;">Thammasaharn</p></p>
           </div>
       </div>
     </div>
@@ -93,48 +91,59 @@
 
     <!-- footer -->
     <footer class="jumbotron custom-j">
-           <div class="row">
-             <div class="col-sm-3" style="display:flex;
-               justify-content:center;
-               align-items:center;
-               padding-top:10px;
-               padding-right:10px;
-               padding-bottom:10px">
+            <div class="row">
+                <div class="col-sm-4" style="display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    padding-top:10px;
+                    padding-right:10px;
+                    padding-bottom:10px">
 
-               <div class="over row" href="">
+                    <div class="over row" href="">
                   
                      <!-- <img class="git" src="Img/github-svg.svg">                -->
-                     <div class="img" style="width:100px; height:100px;"></div>
-                     <div style="padding-left:10px; padding-top:15px">
-                       <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
+                        <div class="img" style="width:100px; height:100px;"></div>
+                            <div style="padding-left:10px; padding-top:15px">
+                            <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
                        
-                       <p>
-                         Fork Project
-                       </p>
-                     </div>
-                 </div> 
+                            <p>
+                            Fork Project
+                            </p>
+                        </div>
+                    </div> 
                </div>
                
-                <div class="col-sm-3 col-xs-12 hor-cen" style=" 
+                <div class="col-sm-4 col-xs-12 hor-cen " style=" 
                padding-left:2.5%;
                padding-right:2.5%;        
                display:flex;">
-               <div>
-                 <h1 style="width:100%;">KMITL</h1>
-                 <p>Faculty of Information Technology</p>
-               </div>
-               </div>
-                  <div class="col-sm-6" style="width:100%; display:flex; vertical-align:center; padding:0px;">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam a culpa enim ratione omnis possimus aperiam iusto harum exercitationem eaque minima quam repellendus rerum, et deleniti officia laboriosam quibusdam quia!
-                  </div>
+                    <div>
+                        <h1 style="width:100%;">KMITL</h1>
+                        <p>Faculty of Information Technology</p>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 sidebar-right" style="width:100%;
+                display:flex;
+                vertical-align:center;
+                padding:10px;
+                background-color:rgba(0,0,0,0)">
+                <a href="/about"><div class="contact-2 over row">
+                        <div class="img2" style="width:100px; height:100px;"></div>
+                            <div style="padding-left:15px; padding-top:0px">
+                                 <h2 style="margin-bottom:0px; padding:0px; margin-top:15px; text-decoration:none; color:white;">Contact us</h2>
+                                 <p style="margin-top:-5px; padding:0px;">For more information</p>
+                            </div>
+                        </div>
+                    </div></a>
                    <!-- <img src="Img/kaggle.png" style="width:100%; height:100%"> -->
 
-             </div>
-       
-           </footer>
+            </div>
+    </footer>
+
            <div style="background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
            justify-content: center;">
-             &copycopyright Lorem ipsum
+             Copyright &copy ITF Group
            </div>
     
 

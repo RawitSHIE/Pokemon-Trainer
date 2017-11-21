@@ -3,6 +3,16 @@ body,html{
     height: 100%;
 }
 
+a:hover{
+    text-decoration:none;
+    color: inherit;
+}
+
+a:active{
+    text-decoration:none;
+    color:inherit;
+}
+
 .header {
     position: relative;
     display: table;
@@ -32,10 +42,7 @@ body,html{
     overflow: hidden;
     position: fixed;
     z-index: 1;
-    width: 100%;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin:20px;
 }
 
 .topnav a {
@@ -61,6 +68,29 @@ body,html{
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.first{
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 0px;
+    margin: 12px;
+}
+
+.first:hover{
+    background: #929292;
+    /* box-shadow: 3px 0 10px 0 #aaaaaa; */
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+.first:active{
+    /* box-shadow: 0 0 40px 0 #aaaaaa; */
+    transform: scale(1.1);
 }
 
 .bg-img {
@@ -168,7 +198,40 @@ input[type=text]:focus {
 }
 
 .propic-row p{
-    font-size: 1rem;
+    font-size: 1.01rem;
+}
+
+.propic-row h3{
+    font-size: 2rem;
+}
+
+.contact-pro{
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 12px;
+    margin: 9px;
+}
+
+.contact-pro:hover{
+    background: #696969;
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 #aaaaaa;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+.contact-pro:active{
+    box-shadow: 0 0 40px 0 #aaaaaa;
+    transform: scale(1.1);
+}
+
+.contact-pro:active img{
+    border-color:white;
+    border-width: 2px;
 }
 
 .toolpic-row{
@@ -185,6 +248,7 @@ input[type=text]:focus {
     padding-left: 5%;
     padding-right: 5%;
 }
+
 
 .toolpic-row p{
     font-size: 1rem;
@@ -241,7 +305,6 @@ input[type=text]:focus {
 .over:hover {
     background: #696969;
     border-radius: 6px;
-
     box-shadow: 0 5px 0 #aaaaaa;
     color: #fff;
     cursor: pointer;
@@ -255,7 +318,7 @@ input[type=text]:focus {
   }
   
 .img{
-    background-image: url('./Img/github-svg.svg');
+    background-image: url('../img/github-svg.svg');
     background-size: 100px 100px;
     transition-property: background-image;
     transition-duration: .1s, .1s;
@@ -263,7 +326,7 @@ input[type=text]:focus {
 }
 
 .over:hover .img{
-    background-image: url('./Img/logo-2.png');
+    background-image: url('../img/logo-2.png');
     background-size: 100px 100px;
     transition-property: background-image;
     transition-duration: .1s, .1s;
@@ -272,42 +335,77 @@ input[type=text]:focus {
 }
 
 .over:active .img{
-    background-image: url('./Img/logo-3.png');
+    background-image: url('../img/logo-3.png');
     background-size: 100px 100px;
 }
 
-.contact{
+.sidebar-right {
+    width: 100%;
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+.sidebar-right:hover{
+    background-color: rgb(145, 145, 145);
+}
+
+.sidebar-right:hover .contact-2{
     transition-property: background, border-radius;
     transition-duration: .2s, 1s;
     transition-timing-function: linear;
     padding: 12px;
-    margin: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact:hover{
+/* .contact-2{
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.contact-2:hover{
     background: #696969;
     border-radius: 6px;
-
-    box-shadow: 0 0 20px 0px #aaaaaa;
+    box-shadow: 0 5px 0 #aaaaaa;
     color: #fff;
     cursor: pointer;
     font: inherit;
-    transform: scale(1.05);
-    transition: all .2s linear;
+    transition: all .1s linear;
 }
 
-.contact:active{
-    box-shadow: 0 0 40px 0px #aaaaaa;
-    /* transform: translateY(5px); */
-    /* transition: all 200ms ease-in; */
-    transform: scale(1.1);
+.contact-2:active{
+    box-shadow: 0 3px 0 #aaaaaa;
+    transform: translateY(3px);
 }
 
-.contact:hover img{
-    border-color: white;
-    border-width: 2px;
+.img2{
+    background-image: url('../img/contact.png');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
 }
 
+.contact-2:hover .img2{
+    background-image: url('../img/contactv2.png');
+    background-size: 100px 100px;
+    transition-property: background-image;
+    transition-duration: .1s, .1s;
+    transition-timing-function: linear;
+}
+
+.contact-2:active .img2{
+    background-image: url('../img/contactv2.png');
+    background-size: 100px 100px;
+}
 
 .tool-1{
     /* background-color: rgba(82, 3, 138, 0.986); */
@@ -411,3 +509,4 @@ input[type=text]:focus {
     transform: scale(1.05);
     transition: all .2s linear;
 }
+
