@@ -114,10 +114,24 @@
 
     </head>
     <body background="{{asset('img/poke_bg.jpg')}}">
-      <nav class="topnav">
-          <a id="home" href="/">Home</a>
-          <a id="login" href="{{ route('login') }}">login</a>
-      </nav>
+      <div class="topnav">
+      <a id="home" href="/" >Home</a>
+      @if(Auth::check())
+        <a id="login" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                          <a id="login" href="/console">Edit</a>
+                                        @else
+                                          <a id="login" href="/login">Login</a>
+      @endif
+    </div>
+
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="padding-top:4em;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
