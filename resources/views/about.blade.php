@@ -42,14 +42,14 @@
                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com/rawitgun" target="_blank">
-                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" style="width:50px">
+                            <a class="col-4 hor-cen" href="https://www.facebook.com/rawitgun" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" >
                             </a>
-                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com" target="_blank">
-                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" style="width:50px">
+                            <a class="col-4 hor-cen" href="https://twitter.com/Rawitgun" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" >
                             </a>
-                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com" target="_blank">
-                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" style="width:50px">
+                            <a class="col-4 hor-cen" href="https://www.instagram.com/rawitshie/" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" >
                             </a>
                         </div>
                     </div>
@@ -61,8 +61,15 @@
                 <div class="collapse multi-collapse" id="multiCollapse2">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
+                            <a class="col-4 hor-cen" href="https://www.facebook.com/PASH21" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://twitter.com/littlef6969" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://www.instagram.com/dek_dew/" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" >
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -73,12 +80,15 @@
                 <div class="collapse multi-collapse" id="multiCollapse3">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
-                        </div>
-                        <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
+                            <a class="col-4 hor-cen" href="https://www.facebook.com/khing.bcc" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://twitter.com/khingbcc" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://www.instagram.com/_kkhinnng/" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" >
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,12 +100,15 @@
                 <div class="collapse multi-collapse" id="multiCollapse4">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
-                        </div>
-                        <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
+                            <a class="col-4 hor-cen" href="https://www.facebook.com/skefolksy" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}">
+                            </a>
+                            <a class="col-4 hor-cen" href="https://twitter.com/skefolksy" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}">
+                            </a>
+                            <a class="col-4 hor-cen" href="https://www.instagram.com/skefolksy/" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -106,12 +119,15 @@
                 <div class="collapse multi-collapse" id="multiCollapse5">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
-                        </div>
-                        <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
+                            <a class="col-4 hor-cen" href="https://www.facebook.com/jongjiwshawol" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://twitter.com/JON9JIW" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" >
+                            </a>
+                            <a class="col-4 hor-cen" href="https://www.instagram.com/jon9jiw/" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" >
+                            </a>
                         </div>
                     </div>
                 </div>

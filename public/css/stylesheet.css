@@ -208,9 +208,11 @@ input[type=text]:focus {
 
 /* logo */
 .logo-pro{
+    min-width: 45px;
     transition-property: background, border-radius;
     transition-duration: .2s, 1s;
     transition-timing-function: linear;
+
 }
 
 .logo-pro:hover{
