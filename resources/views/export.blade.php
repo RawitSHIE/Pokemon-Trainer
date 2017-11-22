@@ -15,36 +15,47 @@
   <body>
     
     <!--nav bar -->
-    <div class="topnav first">
-      <a id="home" href="/" >Home</a>
-    </div>
+    <div class="topnav">
+    <a id="home" href="/" >Home</a>
+      @if(Auth::check())
+        <a id="login" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
 
-    <form action="/logout" method="post">
-        {{ csrf_field() }}
-        <input type="submit" value="Logout">
-    </form>
-
-    <div class="container">
-        <table class="table table-responsive">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($data as $item)
-                <tr>
-                    <td>{{ $item->id }}</td>
-                    <td>{{ $item->name }}</td>
-                    <td><a href="/console/data/{{ $item->id }}/edit">Edit</a></td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                        @else
+                                          <a id="login" href="/login">Login</a>
+      @endif
     </div>
     
+    
+    <!-- table -->
+    <div class="container">
+        <table class="table table-striped table-dark">
+            <div>
+                <thead class="" >
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($data as $item)
+                    <tr>
+                        <td>{{ $item->id }}</td>
+                        <td>{{ $item->name }}</td>
+                        <td><a href="/console/data/{{ $item->id }}/edit">Edit</a></td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </div>
+        </table>
+    </div>
      </footer>
     <div style="background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
     justify-content: center;">
