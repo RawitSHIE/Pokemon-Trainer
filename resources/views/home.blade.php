@@ -57,9 +57,11 @@
           <div class="over row">
            
               <!-- <img class="git" src="Img/github-svg.svg">                -->
+              <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank">
               <div class="img" style="width:100px; height:100px;"></div>
               <div style="padding-left:10px; padding-top:15px">
-                <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
+                  <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
+              </a>
                 
                 <p>
                   Fork Project
