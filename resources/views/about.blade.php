@@ -42,8 +42,14 @@
                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
                         <div class="row">
-                            <a href="https://www.facebook.com" target="_blank">
-                                <img src="{{ asset('img/facebook-logo.png') }}" style="width:65px; height:50px">
+                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com/rawitgun" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/facebook-flat.png') }}" style="width:50px">
+                            </a>
+                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/twitter-flat.png') }}" style="width:50px">
+                            </a>
+                            <a class="col-sm-4 hor-cen" href="https://www.facebook.com" target="_blank">
+                                <img class="logo-pro" src="{{ asset('img/instagram-flat.png') }}" style="width:50px">
                             </a>
                         </div>
                     </div>
@@ -54,10 +60,6 @@
                 <p style="text-align:center;"><h3 style="margin:0%">Passawit</h3><p style="font-size:1.35vw;">Riewthong</p></p>
                 <div class="collapse multi-collapse" id="multiCollapse2">
                     <div class="card card-body" style="border:0px; background-color:transparent;">
-                        <div class="row">
-                            <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
-                            Facebook: RawitSHIE
-                        </div>
                         <div class="row">
                             <!-- <img src="{{ asset('img/facebook-logo.png') }}" style="width:20px; height:20px"> -->
                             Facebook: RawitSHIE

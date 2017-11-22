@@ -54,6 +54,7 @@ a:active{
     text-decoration: none;
     font-size: 13px;
 }
+
 #home{
     background-color: rgba(53, 53, 53, 0.705);
     font-size: 17px;
@@ -205,6 +206,29 @@ input[type=text]:focus {
     font-size: 2rem;
 }
 
+/* logo */
+.logo-pro{
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+}
+
+.logo-pro:hover{
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    transform: scale(1.05);
+    transition: all .2s linear;
+}
+
+.logo-pro:active{
+
+    transform: scale(1.1);
+}
+
+
+/* logo-- */
+
 .contact-pro{
     transition-property: background, border-radius;
     transition-duration: .2s, 1s;
@@ -283,6 +307,7 @@ input[type=text]:focus {
     justify-content:center;
     align-items:center;
     text-align:center;
+    display: flex;
 }
 
 .git{
