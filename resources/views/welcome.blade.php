@@ -16,7 +16,7 @@
         <!-- Styles -->
         <style>
             html, body {
-              background-color: #000;
+              background-color: #fff;
               color: #636b6f;
               font-family: 'Raleway', sans-serif;
               font-weight: 100;
@@ -61,14 +61,14 @@
               margin-left: 40px;
             }
             .chart .out p {
-              color: #FFF;
+              color: #000;
               font-weight: bold;
               text-align: center;
               padding-top: 10px;
               margin-bottom: 10px;
             }
             .chart .out ul {
-              background-color: rgba(255, 255, 255, 0.25);
+              background-color: rgba(0, 0, 0, 0.25);
               padding-left: 0px;
               list-style-type: none;
             }
@@ -112,10 +112,10 @@
     <body>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="height:100% auto; padding-top:2em;">
-        <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
+        <h1 style="font-weight: 600; color:#000;">{{ $data->name }}</h1>
+        <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
         <div class="chart skills"></div>
       </section>
-      <!-- <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg"> -->
 
 
 
@@ -123,13 +123,13 @@
 
         <script>
       kindChart($('.chart.skills'), {
-  web: '#EEEEEE',
+  web: '#000',
   labels: ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"],
   datasets: [ // 0 being farthest back, 1 being closest
     {
       label: '{{ $data->name }}',
-      fillColor: "rgba(12,64,48,1)",
-      strokeColor: "rgba(255,255,255,1)",
+      fillColor: "rgba(12,187,111,0.8)",
+      strokeColor: "rgba(12,71,111,1)",
       data: [{{$data->hp}}, {{$data->attack}}, {{$data->defense}}, {{$data->sp_atk}}, {{$data->sp_def}}, {{$data->speed}}]
     }
   ]
