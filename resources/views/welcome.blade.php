@@ -112,10 +112,10 @@
 
     </head>
     <body background="{{asset('img/poke_bg.jpg')}}">
-      <div class="topnav">
-        <a id="home" href="/">Home</a>
-        <a id="login" href="{{ route('login') }}">login</a>
-      </div>
+      <nav class="topnav">
+          <a id="home" href="/">Home</a>
+          <a id="login" href="{{ route('login') }}">login</a>
+      </nav>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="padding-top:4em;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
