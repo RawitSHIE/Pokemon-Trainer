@@ -12,10 +12,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
          <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hovereffect.css') }}" rel="stylesheet">
     <link href="{{ asset('css/devices.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
+    
 
         <!-- Styles -->
         <style>
@@ -140,7 +141,7 @@
                 <div>
                   <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
                   <form method="get" action="/show">
-                    <input class="p-inp" type="text" name="pokemon" placeholder="Gotcha!">
+                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
                   </form>
                 </div>
               </div>

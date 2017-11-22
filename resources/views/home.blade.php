@@ -42,7 +42,7 @@
               <h4 style="color:rgb(255, 255, 255)">Gotta catch them all!</h4>
           </div>
           
-          <video id="bgvid" playsinline autoplay loop>
+          <video id="bgvid audio" playsinline autoplay loop>
             <!-- video source -->
               <source src="{{ asset('video/Pokemon.mp4') }}" type="video/mp4">
               <!-- <source src="video\Oscar Nominees 2017 - Best Visual Effects - A Showcase.mp4" type="video/mp4"> -->
@@ -112,7 +112,21 @@
     justify-content: center;">
     Copyright &copy ITF Group
     </div>
-    
+    <script>
+       //change music icon
+       $("#audio").on('dblclick', function(){
+                $("#audio").attr("src","button/audio_on");
+            document.getElementById("#background").volume = 1;
+
+
+            });
+
+                $("#audio").on('click', function(){
+             $("#audio").attr("src","button/audio_off");
+                    document.getElementById("#background").volume = 0;
+
+            });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
