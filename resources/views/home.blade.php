@@ -16,8 +16,9 @@
   
     
     <!--nav bar -->
-    <div class="topnav first">
-      <a id="home" href="/" >Home</a>
+    <div class="topnav">
+      <a id="home" href="/">Home</a>
+      <a id="login" href="{{ route('login') }}">login</a>
     </div>
 
     <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
@@ -38,7 +39,7 @@
           </video>
               <br>
           <form method="get" action="/show" target="_blank">
-              <input type="text" name="pokemon" placeholder="Gotcha!">
+              <input class="input" type="text" name="pokemon" placeholder="Gotcha!">
           </form>
     </div>
     </header>

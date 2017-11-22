@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
+<div class="container" style="   
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;">
+
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
@@ -65,5 +69,6 @@
             </div>
         </div>
     </div>
+
 </div>
 @endsection

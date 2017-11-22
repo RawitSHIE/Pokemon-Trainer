@@ -1,10 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container" style="   
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
+        <div class="col-ms-8">
+            <div class="panel panel-default" style="
+            width: 52vw;
+            min-width: 300px;">
                 <div class="panel-heading">Register</div>
 
                 <div class="panel-body">

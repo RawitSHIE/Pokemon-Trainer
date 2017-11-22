@@ -42,7 +42,7 @@ a:active{
     overflow: hidden;
     position: fixed;
     z-index: 1;
-    margin:20px;
+    width:100%;
 }
 
 .topnav a {
@@ -56,7 +56,13 @@ a:active{
 }
 
 #home{
-    background-color: rgba(53, 53, 53, 0.705);
+    background-color: rgba(29, 29, 29, 0.705);
+    font-size: 17px;
+}
+
+#login{
+    float: right;
+    background-color: rgba(29, 29, 29, 0.705);
     font-size: 17px;
 }
 
@@ -126,7 +132,7 @@ video {
 }
 
 /* form */
-input[type=text] {
+.input[type=text] {
     text-align: center;
     color: white;
     width: 20%;
@@ -142,7 +148,7 @@ input[type=text] {
     transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
+.input[type=text]:focus {
     width: 30%;
     background-color: rgba(0, 0, 0, 0.7);
 }
