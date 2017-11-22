@@ -114,12 +114,16 @@
 
     </head>
     <body background="{{asset('img/poke_bg.jpg')}}">
+      <div class="topnav">
+        <a id="home" href="/">Home</a>
+        <a id="login" href="{{ route('login') }}">login</a>
+      </div>
 
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <section class="text-center" style="padding-top:2em;">
+      <section class="text-center" style="padding-top:4em;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
-        <div class="row" style="padding-top:5%;">
+        <div class="row" style="padding-top:3%;">
           <div class="col-sm-6">
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar"></div>
