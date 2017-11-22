@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hovereffect.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/devices.min.css') }}" rel="stylesheet">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
         <!-- Styles -->
         <style>
             html, body {
-              background-color: #fff;
               color: #636b6f;
               /*font-family: 'Raleway', sans-serif;*/
               font-weight: 100;
@@ -51,7 +51,7 @@
             }
             .chart {
               overflow: hidden;
-              width: 60%;
+              width: 100%;
               margin: 0 auto;
               text-align: center;
               cursor: crosshair;
@@ -73,7 +73,7 @@
               margin-bottom: 10px;
             }
             .chart .out ul {
-              background-color: rgba(0, 0, 0, 0.25);
+              background-color: rgba(255, 255, 255, 0.25);
               padding-left: 0px;
               list-style-type: none;
             }
@@ -107,22 +107,37 @@
               height: 9px;
               width: 9px;
             }
-
       </style>
 
 
 
 
     </head>
-    <body>
+    <body background="{{asset('img/poke_bg.jpg')}}">
+
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <section class="text-center" style="height:100% auto; padding-top:2em;">
-        <h1 style="font-weight: 600; color:#000;">{{ $data->name }}</h1>
-        <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
-        <div class="chart skills"></div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <section class="text-center" style="padding-top:2em;">
+        <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
+        <div class="row" style="padding-top:5%;">
+          <div class="col-sm-6">
+            <div class="marvel-device lumia920 red" style="height:60%">
+              <div class="top-bar"></div>
+              <div class="volume"></div>
+              <div class="camera"></div>
+              <div class="speaker"></div>
+              <div class="screen">
+                  <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="chart skills"></div>
+          </div>
+        </div>
       </section>
 
-    <footer class="custom-j" style="background-color: rgb(255, 255, 255, 0.9)">
+    <footer class="custom-j" style="background-color: rgb(255, 255, 255, 0.9);">
    
       <div class="row">
         <div class="col-sm-4" style="display:flex;
@@ -132,7 +147,7 @@
           padding-right:10px;
           padding-bottom:10px">
        
-          <div class="over row">
+          <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank"><div class="over row">
            
               <!-- <img class="git" src="Img/github-svg.svg">                -->
               <div class="img" style="width:100px; height:100px;"></div>
@@ -143,7 +158,7 @@
                   Fork Project
                 </p>
               </div>
-          </div> 
+          </div></a>
         </div>
         
          <div class="col-sm-4 col-xs-12 hor-cen" style=" 
@@ -181,13 +196,13 @@
 
         <script>
       kindChart($('.chart.skills'), {
-  web: '#000',
+  web: '#fff',
   labels: ["HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed"],
   datasets: [ // 0 being farthest back, 1 being closest
     {
       label: '{{ $data->name }}',
-      fillColor: "rgba(12,187,111,0.8)",
-      strokeColor: "rgba(12,71,111,1)",
+      fillColor: "rgba(255,0,0,0.7)",
+      strokeColor: "rgba(0,0,0,1)",
       data: [{{$data->hp}}, {{$data->attack}}, {{$data->defense}}, {{$data->sp_atk}}, {{$data->sp_def}}, {{$data->speed}}]
     }
   ]
@@ -389,6 +404,8 @@ function kindChart(element, options) {
     $(this).find('.out ul').html('');
   });
 }
+
+
     </script>
     </body>
 </html>

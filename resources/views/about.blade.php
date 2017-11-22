@@ -13,8 +13,9 @@
   </head>
   <body>
     <!--nav bar -->
-    <div class="topnav first">
+    <div class="topnav">
         <a id="home" href="/">Home</a>
+        <a id="login" href="/login">login</a>
     </div>
     <!-- Body -->
     <header class="header" id="top-ab">
