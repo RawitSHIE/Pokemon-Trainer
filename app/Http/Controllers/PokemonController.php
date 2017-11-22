@@ -23,5 +23,9 @@ class PokemonController extends Controller
         return redirect('/console');
     }
 
+    public function create() {
+        return view('create');
+    }
+
 }
 
