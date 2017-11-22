@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ $data->name }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -92,7 +92,7 @@
                     @if($data->type_2 == "")
                     {{ $data->type_2 = "none" }}
                     @endif
-                    <span>Type 2 : {{$data->type_2}}</span>                    
+                    <span>Type 2 : {{$data->type_2}}</span>
                 </div>
             </div>
         </div>

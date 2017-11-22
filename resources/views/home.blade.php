@@ -36,7 +36,7 @@
           
           </video>
               <br>
-          <form method="get" action="/show">
+          <form method="get" action="/show" target="_blank">
               <input type="text" name="pokemon" placeholder="Gotcha!">
           </form>
     </div>
