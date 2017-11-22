@@ -15,7 +15,7 @@
   <body>
     
     <!--nav bar -->
-    <div class="topnav first">
+    <div class="topnav">
       <a id="home" href="/" >Home</a>
     </div>
 

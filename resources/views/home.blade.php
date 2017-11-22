@@ -16,10 +16,10 @@
   
     
     <!--nav bar -->
-    <div class="topnav first">
+    <div class="topnav">
       <a id="home" href="/" >Home</a>
       @if(Auth::check())
-        <a href="{{ route('logout') }}"
+        <a id="login" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
@@ -28,8 +28,9 @@
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
-      @else
-        <a href="/login">Login</a>
+                                          <a id="login" href="/console">Edit</a>
+                                        @else
+                                          <a id="login" href="/login">Login</a>
       @endif
     </div>
 
