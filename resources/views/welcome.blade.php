@@ -16,7 +16,7 @@
         <!-- Styles -->
         <style>
             html, body {
-              background-color: #52DD83;
+              background-color: #000;
               color: #636b6f;
               font-family: 'Raleway', sans-serif;
               font-weight: 100;
@@ -46,7 +46,7 @@
             }
             .chart {
               overflow: hidden;
-              width: 700px;
+              width: 60%;
               margin: 0 auto;
               text-align: center;
               cursor: crosshair;
@@ -68,7 +68,7 @@
               margin-bottom: 10px;
             }
             .chart .out ul {
-              background-color: rgba(0, 0, 0, 0.25);
+              background-color: rgba(255, 255, 255, 0.25);
               padding-left: 0px;
               list-style-type: none;
             }
@@ -104,14 +104,22 @@
             }
 
       </style>
+
+
+
+
     </head>
     <body>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    
-      <div class="row hor-cen">
-        <div class="col-ms-6 mx-auto"><img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg"></div>
-        <div class="col-ms-6 mx-auto"><div class="chart skills"></div></div></div>
-      </div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <section class="text-center" style="height:100% auto; padding-top:2em;">
+        <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
+        <div class="chart skills"></div>
+      </section>
+      <!-- <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg"> -->
+
+
+
+
 
         <script>
       kindChart($('.chart.skills'), {
@@ -157,7 +165,7 @@ function kindChart(element, options) {
   
   var colors = ['97,193,145','43,176,212','43,82,202','193,52,52','177,193,52','137,45,193','202,128,33','197,27,128'];
   
-  element.append('<ul class="values"></ul>');
+  //element.append('<ul class="values"></ul>');
   element.append('<div class="out"><ul></ul></div>');
   
   function getColor(passed) {
@@ -293,12 +301,12 @@ function kindChart(element, options) {
     if(out < 0) {
       out = options.labels.length + out;
     }
-    
+
     $(this).find('.out').css({
       left: (e.pageX - objLeft) + 40,
       top: (e.pageY - objTop) - 14
     });
-    
+
     var outtext = '';
     for(var i = 0; i < options.datasets.length; i++) {
       outtext += '<li style="color: '+options.datasets[i].strokeColor+';">'+options.datasets[i].label+': '+options.datasets[i].data[out]+'</li>';
@@ -311,7 +319,7 @@ function kindChart(element, options) {
       select_circle[i].setAttribute('fill', options.datasets[i].strokeColor);
       
     }
-    
+
     $(this).find('.out ul').html('<p>'+options.labels[out]+'</p>'+ outtext);
     }
     });
