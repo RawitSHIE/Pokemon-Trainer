@@ -151,7 +151,7 @@
           padding-right:10px;
           padding-bottom:10px">
        
-          <div class="over row">
+          <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank"><div class="over row">
            
               <!-- <img class="git" src="Img/github-svg.svg">                -->
               <div class="img" style="width:100px; height:100px;"></div>
@@ -162,7 +162,7 @@
                   Fork Project
                 </p>
               </div>
-          </div> 
+          </div></a>
         </div>
         
          <div class="col-sm-4 col-xs-12 hor-cen" style=" 

@@ -67,20 +67,18 @@
           padding-right:10px;
           padding-bottom:10px">
        
-          <div class="over row">
+          <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank"><div class="over row">
            
               <!-- <img class="git" src="Img/github-svg.svg">                -->
-              <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank">
               <div class="img" style="width:100px; height:100px;"></div>
               <div style="padding-left:10px; padding-top:15px">
                   <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
-              </a>
                 
                 <p>
                   Fork Project
                 </p>
               </div>
-          </div> 
+          </div></a>
         </div>
         
          <div class="col-sm-4 col-xs-12 hor-cen" style=" 
