@@ -184,13 +184,6 @@ video {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-::-webkit-.pnp-placeholder { /* Chrome/Opera/Safari */
-    color: black;
-
-}
-::-webkit-.pnp-placeholder :focus{ /* Chrome/Opera/Safari */
-    color: black;
-}
 
 /* footer */
 .custom-j div{

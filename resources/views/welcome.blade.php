@@ -106,6 +106,13 @@
               height: 9px;
               width: 9px;
             }
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: black;
+
+            }
+            ::-webkit-input-placeholder :focus{ /* Chrome/Opera/Safari */
+                color: black;
+            }
       </style>
 
 
