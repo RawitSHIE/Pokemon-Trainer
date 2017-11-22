@@ -21,6 +21,9 @@
         <!-- Styles -->
         <style>
             html, body {
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
               color: #636b6f;
               /*font-family: 'Raleway', sans-serif;*/
               font-weight: 100;
@@ -133,7 +136,7 @@
     </div>
 
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <section class="text-center" style="padding-top:4em;">
+      <section class="text-center" style="padding-top:4em; height: 100%;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
         <div class="row" style="padding-top:3%; width: 100%;">
 
