@@ -27,5 +27,11 @@ class PokemonController extends Controller
         return view('create');
     }
 
+    public function store(Request $request) {
+        $pokemon = new Pokemon();
+        $pokemon->fill($request->all());
+        return redirect('/console');
+    }
+
 }
 
