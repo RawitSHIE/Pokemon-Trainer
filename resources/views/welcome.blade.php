@@ -136,9 +136,9 @@
               <div class="volume"></div>
               <div class="camera"></div>
               <div class="speaker"></div>
-              <div class="screen" style="padding:20px">
+              <div class="screen" style="padding:20px;">
                 <div>
-                  <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+                  <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
                   <form method="get" action="/show">
                     <input class="p-inp" type="text" name="pokemon" placeholder="Gotcha!">
                   </form>
