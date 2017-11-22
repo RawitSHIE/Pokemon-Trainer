@@ -495,7 +495,6 @@ input[type=text]:focus {
 
 .tool-4:hover{
     background: #212e50;
-
     box-shadow: 0 0 20px 0px #aaaaaa;
     color: #fff;
     cursor: pointer;
