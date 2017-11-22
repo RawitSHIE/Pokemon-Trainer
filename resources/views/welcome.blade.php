@@ -81,7 +81,7 @@
                 <div class="title m-b-md">
                     {{ $data->name }}
                 </div>
-                <img src="{{asset("img/pokemon_img")}}/{{$data->name}}.jpg">
+                <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
 
                 <div class="links">
                     <span>HP : {{$data->hp}}</span>
