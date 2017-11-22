@@ -106,13 +106,7 @@
               height: 9px;
               width: 9px;
             }
-            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                color: black;
 
-            }
-            ::-webkit-input-placeholder :focus{ /* Chrome/Opera/Safari */
-                color: black;
-            }
       </style>
 
 
@@ -133,23 +127,24 @@
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
-                  <p style="color:#fff; font-size:1.5em;">
-                    Type : {{$data->type_1}}
-                    @if($data->type_2 != "")
-                      , {{ $data->type_2}}
-                    @endif
-                  </p>
+                  <form method="get" action="/show">
+                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
+                  </form>
+                  
                 </div>
               </div>
               <div class="volume"></div>
               <div class="camera"></div>
               <div class="speaker"></div>
-              <div class="screen" style="padding:20px;">
+              <div class="screen" style="padding:30px;">
                 <div>
                   <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
-                  <form method="get" action="/show">
-                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
-                  </form>
+                  <p style="color:#000; font-size:1.5em;">
+                    Type : {{$data->type_1}}
+                    @if($data->type_2 != "")
+                      , {{ $data->type_2}}
+                    @endif
+                  </p>
                 </div>
               </div>
             </div>
