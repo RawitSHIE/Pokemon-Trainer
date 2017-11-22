@@ -31,5 +31,3 @@ Route::group(['prefix' => 'console'], function() {
 Route::get('/home', function() {
     return redirect('console');
 });
-
-

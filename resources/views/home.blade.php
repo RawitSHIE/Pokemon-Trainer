@@ -18,6 +18,19 @@
     <!--nav bar -->
     <div class="topnav first">
       <a id="home" href="/" >Home</a>
+      @if(Auth::check())
+        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+      @else
+        <a href="/login">Login</a>
+      @endif
     </div>
 
     <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
