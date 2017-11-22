@@ -17,8 +17,6 @@
     <link href="{{ asset('css/hovereffect.css') }}" rel="stylesheet">
     <link href="{{ asset('css/devices.min.css') }}" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
         <!-- Styles -->
         <style>
             html, body {
@@ -118,12 +116,10 @@
         <a id="home" href="/">Home</a>
         <a id="login" href="{{ route('login') }}">login</a>
       </div>
-
-      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="padding-top:4em;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
-        <div class="row" style="padding-top:3%;">
+        <div class="row" style="padding-top:3%; width: 100%;">
           <div class="col-sm-6">
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar"></div>
@@ -131,7 +127,7 @@
               <div class="camera"></div>
               <div class="speaker"></div>
               <div class="screen">
-                  <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+                <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
               </div>
             </div>
           </div>
@@ -141,7 +137,7 @@
         </div>
       </section>
 
-    <footer class="custom-j" style="background-color: rgb(255, 255, 255, 0.9);">
+    <footer class="jumbotron custom-j">
    
       <div class="row">
         <div class="col-sm-4" style="display:flex;
@@ -156,7 +152,7 @@
               <!-- <img class="git" src="Img/github-svg.svg">                -->
               <div class="img" style="width:100px; height:100px;"></div>
               <div style="padding-left:10px; padding-top:15px">
-                <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
+                  <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
                 
                 <p>
                   Fork Project
