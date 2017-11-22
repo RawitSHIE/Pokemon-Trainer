@@ -3,13 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Pokemon;
 
 class PokemonController extends Controller
 {
-    public function find(Request $request) {
-        $find = $request->input('pokemon');
-        $data = DB::table('pokemon')->where('name', 'like', $find)->first();
-        return view('welcome')->with('data', $data);
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
+
+    public function edit($id) {
+        return view('editdata')->with('data', Pokemon::find($id));
+    }
+
+    public function update(Request $request, $id) {
+        $update = Pokemon::find($id);
+        $update->fill($request->all());
+        $update->save();
+        return redirect('/console');
+    }
+
 }
+

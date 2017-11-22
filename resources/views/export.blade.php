@@ -19,16 +19,33 @@
       <a id="home" href="/" >Home</a>
     </div>
 
-    <div class="upload">
-      <form action="ImportClients" method="post" enctype="multipart/form-data">
-        <label>Upload file : </label><br>
-        <input type="file" name="file" />
-        <input type="hidden" value="{{ csrf_token() }}" name="_token" />
-        <input type="submit" value="Upload">
-      </form>
-    </div>
+    <form action="/logout" method="post">
+        {{ csrf_field() }}
+        <input type="submit" value="Logout">
+    </form>
 
-    </footer>
+    <div class="container">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($data as $item)
+                <tr>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->name }}</td>
+                    <td><a href="/console/data/{{ $item->id }}/edit">Edit</a></td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+    
+     </footer>
     <div style="background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
     justify-content: center;">
     Copyright &copy ITF Group

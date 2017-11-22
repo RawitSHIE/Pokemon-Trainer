@@ -19,4 +19,17 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/show', 'PokemonController@find');
+Route::get('/show', 'IndexController@find');
+
+Auth::routes();
+
+Route::group(['prefix' => 'console'], function() {
+    Route::get('/', 'HomeController@index')->name('home');
+    Route::resource('/data', 'PokemonController');
+});
+
+Route::get('/home', function() {
+    return redirect('console');
+});
+
+
