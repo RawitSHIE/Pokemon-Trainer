@@ -161,6 +161,37 @@ video {
     color: black;
 }
 
+/* search */
+.p-inp[type=text] {
+    text-align: center;
+    color: black;
+    margin:10px;
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 100%;
+    background-color: transparent;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.p-inp[type=text]:focus {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: black;
+
+}
+::-webkit-input-placeholder :focus{ /* Chrome/Opera/Safari */
+    color: black;
+}
+
 /* footer */
 .custom-j div{
     color: rgb(255, 255, 255);

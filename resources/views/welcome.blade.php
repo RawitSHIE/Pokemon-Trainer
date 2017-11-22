@@ -120,17 +120,33 @@
       <section class="text-center" style="padding-top:4em;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
         <div class="row" style="padding-top:3%; width: 100%;">
+
           <div class="col-sm-6">
             <div class="marvel-device lumia920 red" style="height:60%">
-              <div class="top-bar"></div>
+              <div class="top-bar" style="padding-top: 110%;">
+                <div>
+                  <p style="color:#fff; font-size:1.5em;">
+                    Type : {{$data->type_1}}
+                    @if($data->type_2 != "")
+                      , {{ $data->type_2}}
+                    @endif
+                  </p>
+                </div>
+              </div>
               <div class="volume"></div>
               <div class="camera"></div>
               <div class="speaker"></div>
-              <div class="screen">
-                <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+              <div class="screen" style="padding:20px">
+                <div>
+                  <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+                  <form method="get" action="/show">
+                    <input class="p-inp" type="text" name="pokemon" placeholder="Gotcha!">
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col-sm-6">
             <div class="chart skills"></div>
           </div>
