@@ -17,17 +17,17 @@
       <a id="home" href="/" >Home</a>
       @if(Auth::check())
         <a id="login" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+                onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                Logout
+            </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                          <a id="login" href="/console">Edit</a>
-                                        @else
-                                          <a id="login" href="/login">Login</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
+                <a id="login" href="/console">Edit</a>
+            @else
+                <a id="login" href="/login">Login</a>
       @endif
       <a id="login" href="/all">pokelist</a>
     </div>

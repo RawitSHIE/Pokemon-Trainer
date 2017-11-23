@@ -39,10 +39,10 @@
           <div style= "background-color: transparent;" >
               <img src="{{ asset('img/pokemon.png') }}" style="width:500px;">
               <!-- <h1 style="color:rgb(255, 255, 255)">Pokémon</h1> -->
-              <h4 style="color:rgb(255, 255, 255)">Gotta catch them all!</h4>
+              <h4 style="color:rgb(255, 255, 255)">ALL OF POKEMON</h4>
           </div>
           
-          {{--  <video id="bgvid audio" playsinline autoplay loop>
+          <video id="bgvid audio" playsinline autoplay loop muted>
             <!-- video source -->
               <source src="{{ asset('video/Pokemon.mp4') }}" type="video/mp4">
               <!-- <source src="video\Oscar Nominees 2017 - Best Visual Effects - A Showcase.mp4" type="video/mp4"> -->
@@ -51,7 +51,7 @@
 
 
 
-          </video>  --}}
+          </video>
               <br>
           <div>
           </div>
