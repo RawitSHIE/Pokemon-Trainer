@@ -55,16 +55,16 @@
           </video>
               <br>
           <form method="get" action="/show">
-              <input class="input" type="text" name="pokemon" list="pokemons" placeholder="Search">
+              <input class="input" type="text" class="list-group" name="pokemon" list="pokemons" placeholder="Search">
                 <datalist id="pokemons">
                 @foreach(\App\Pokemon::all('name') as $pokemon)
-                  <option value="{{ $pokemon->name }}">
+                  <option  value="{{ $pokemon->name }}">
                 @endforeach
               </datalist>
           </form>
-          <p style="color: red;">
+          <p style="color: white;">
             <?php if(isset($check)){
-              echo "พิมพ์ผิดอิงั่ง";
+              echo "Pokemon Not found";
             }?>
           </p>
     </div>
