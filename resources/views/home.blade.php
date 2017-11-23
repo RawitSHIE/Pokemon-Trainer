@@ -62,10 +62,11 @@
                 @endforeach
               </datalist>  --}}
           </form>
-
-
-
-
+          <p style="color: red;">
+            <?php if(isset($check)){
+              echo "พิมพ์ผิดอิงั่ง";
+            }?>
+          </p>
     </div>
     </header>
 
