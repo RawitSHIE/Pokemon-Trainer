@@ -47,9 +47,16 @@
 
     <!-- table -->
     <div class="container" style="padding-top:100px">
-        <div style="text-align:center; margin:50px">
-            <h1>EDIT COLUM</h1>
-        </div>
+
+        <div style= "background-color: transparent; text-align:center; margin:50px;" >
+              <img src="{{ asset('img/pokemon.png') }}" style="width:500px;">
+              <h1>DATASET COLUMN</h1>
+              <!-- <h1 style="color:rgb(255, 255, 255)">Pokémon</h1> -->
+          </div>
+
+        {{--  <div style="text-align:center; margin:50px">
+            
+        </div>  --}}
         <table class="table table-striped table-dark">
             <div>
                 <thead class="" >
