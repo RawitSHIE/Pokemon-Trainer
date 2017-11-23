@@ -251,6 +251,7 @@ video {
 
 .propic-row h3{
     font-size: 2rem;
+    color: #000;
 }
 
 /* logo */
@@ -284,7 +285,10 @@ video {
     transition-timing-function: linear;
     padding: 12px;
     margin: 9px;
+    color:black;
+    text-decoration: none;
 }
+
 
 .contact-pro:hover{
     background: #696969;
@@ -296,6 +300,11 @@ video {
     transform: scale(1.05);
     transition: all .2s linear;
 }
+
+.contact-pro:hover h3{
+    color: #fff;
+}
+
 
 .contact-pro:active{
     box-shadow: 0 0 40px 0 #aaaaaa;
