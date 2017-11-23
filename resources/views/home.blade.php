@@ -38,7 +38,7 @@
     <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
       <div class="vertical-center">
           <div style= "background-color: transparent;" >
-              <img src="{{ asset('img/pokemon.png') }}" style="width:500px;">
+              <img src="{{ asset('img/pokemon.png') }}" style="width:500px; max-width: 100%;">
               <!-- <h1 style="color:rgb(255, 255, 255)">Pokémon</h1> -->
               <h4 style="color:rgb(255, 255, 255)">Gotta catch them all!</h4>
           </div>

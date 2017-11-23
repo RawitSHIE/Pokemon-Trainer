@@ -139,11 +139,11 @@
 
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="padding-top:4em; height: 100%;">
-        <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
-        <div class="row" style="padding-top:3%; width: 100%; height:100% auto;">
+        <h1 style="font-weight: 600; color:#fff; padding-top: 0.5em;">{{ $data->name }}</h1>
+        <div class="row" style="padding-top:3%; width: 100%; max-width: 100%; height:auto;">
 
-          <div class="col-sm-6" style="height: auto; max-width: 100%;">
-            <div class="marvel-device lumia920 red" style="height:60%">
+          <div class="col-sm-6" style="height: auto;">
+            <div class="marvel-device lumia920 red" style="height:60%; max-width: 100%;">
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
                   <form method="get" action="/show" style="margin-top:5px;">
@@ -186,57 +186,7 @@
 
       </section>
 
-    <footer class="jumbotron custom-j" style="position: relative;">
-   
-      <div class="row">
-        <div class="col-sm-4" style="display:flex;
-          justify-content:center;
-          align-items:center;
-          padding-top:10px;
-          padding-right:10px;
-          padding-bottom:10px">
-       
-          <a href="https://github.com/RawitSHIE/ITFWEB" target="_blank"><div class="over row">
-           
-              <!-- <img class="git" src="Img/github-svg.svg">                -->
-              <div class="img" style="width:100px; height:100px;"></div>
-              <div style="padding-left:10px; padding-top:15px">
-                  <img src="{{ asset('img/github-logo-white.png') }}" style="width:100px">
-                
-                <p>
-                  Fork Project
-                </p>
-              </div>
-          </div></a>
-        </div>
-        
-         <div class="col-sm-4 col-xs-12 hor-cen" style=" 
-        padding-left:2.5%;
-        padding-right:2.5%;        
-        display:flex;">
-        <div>
-          <h1 style="width:100%;">KMITL</h1>
-          <p>Faculty of Information Technology</p>
-        </div>
-        </div>
-
-        <div class="col-sm-4 sidebar-right" style="width:100%;
-                display:flex;
-                vertical-align:center;
-                padding:10px;
-                background-color:rgba(0,0,0,0)">
-                <a href="/about"><div class="contact-2 over row">
-                        <div class="img2" style="width:100px; height:100px;"></div>
-                            <div style="padding-left:15px; padding-top:0px">
-                                 <h2 style="margin-bottom:0px; padding:0px; margin-top:15px; text-decoration:none; color:white;">Contact us</h2>
-                                 <p style="margin-top:-5px; padding:0px;">For more information</p>
-                            </div>
-                        </div>
-                    </div></a>
-      </div>
-
-    </footer>
-    <div style="background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
+    <div style=" background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
     justify-content: center;">
     Copyright &copy ITF Group
     </div>
