@@ -11,6 +11,15 @@
     <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hovereffect.css') }}" rel="stylesheet">
     <!-- <link href="framework.css" rel="stylesheet"> -->
+    <style>
+    .edit{
+
+    }
+    .edit:hover {
+        background-color: rgb(55,55,55);
+        color:white;
+    }
+    </style>
   </head>
   <body>
     
@@ -19,29 +28,35 @@
     <a id="home" href="/" >Home</a>
       @if(Auth::check())
         <a id="login" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+            onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+            Logout
+        </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                        @else
-                                          <a id="login" href="/login">Login</a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+        @else
+            <a id="login" href="/login">Login</a>
       @endif
+    
     </div>
     
-    
+
+
+
     <!-- table -->
-    <div class="container">
+    <div class="container" style="padding-top:100px">
+        <div style="text-align:center; margin:50px">
+            <h1>EDIT COLUM</h1>
+        </div>
         <table class="table table-striped table-dark">
             <div>
                 <thead class="" >
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
-                        <th>Action</th>
+                        <th style="text-align:center;" >Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,7 +64,7 @@
                     <tr>
                         <td>{{ $item->id }}</td>
                         <td>{{ $item->name }}</td>
-                        <td><a href="/console/data/{{ $item->id }}/edit">Edit</a></td>
+                        <td class = "edit" style="text-align:center;" ><a href="/console/data/{{ $item->id }}/edit">Edit</a></td>
                     </tr>
                     @endforeach
                 </tbody>

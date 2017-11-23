@@ -20,19 +20,18 @@
       <a id="home" href="/" >Home</a>
       @if(Auth::check())
         <a id="login" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
+            onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+            Logout
+        </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                          <a id="login" href="/console">Edit</a>
-                                        @else
-                                          <a id="login" href="/login">Login</a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+        </form>
+          <a id="login" href="/console">Edit</a>
+        @else
+          <a id="login" href="/login">Login</a>
       @endif
-      <a id="login" href="/all">pokelist</a>
     </div>
 
     <header class="header" style="background-color:rgba(0, 0, 0, 0.432);">
@@ -54,14 +53,8 @@
           {{--    --}}
           </video>
               <br>
-          <form method="get" action="/show">
-              <input class="input" type="text" name="pokemon" list="pokemons" placeholder="Search">
-              {{--  <datalist id="pokemons">
-                @foreach($data as $item)
-                  <option value="{{ $item->name }}">
-                @endforeach
-              </datalist>  --}}
-          </form>
+          <div>
+          </div>
 
 
 
@@ -69,6 +62,22 @@
     </div>
     </header>
 
+    <container>
+      <div class="jumbotron propic-row" style="padding:5%; background-color:rgba(255, 255, 255,0)">
+      <div class="row" style="
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      "> 
+            <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%" class="btn btn-primary" data-toggle="collapse" href="#multiCollapse5" aria-expanded="false" aria-controls="multiCollapse5">
+                <img src="{{ asset('img/jiw.jpg') }}" style=" border-radius: 50%;">
+                <p style="text-align:center;"><h3 style="margin:0%">Onruethai</h3></p>
+            </div>
+        
+        </div>
+        </div>
+    </container>
 
     <footer class="jumbotron custom-j">
    

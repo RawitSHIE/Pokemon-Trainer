@@ -144,7 +144,7 @@
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
-                  <form method="get" action="/show">
+                  <form method="get" action="/show" style="margin-top:5px;">
                     <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
                   </form>
                   

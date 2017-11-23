@@ -146,6 +146,12 @@ video {
     padding: 5px 20px 5px 20px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+}
+
+.input[type=text]:hover {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .input[type=text]:focus {
@@ -164,11 +170,11 @@ video {
 /* search */
 .pnp[type=text] {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     margin:10px;
     width: 40%;
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
     font-size: 100%;
     background-color: transparent;
@@ -179,11 +185,23 @@ video {
     transition: width 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
+.pnp[type=text]:hover {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .pnp[type=text]:focus {
     width: 70%;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+::-webkit-.pnp-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(255, 255, 255);
+
+}
+::-webkit-.pnp-placeholder :focus{ /* Chrome/Opera/Safari */
+    color: rgb(255, 255, 255);
+}
 
 /* footer */
 .custom-j div{
