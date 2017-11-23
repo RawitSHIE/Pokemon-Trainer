@@ -134,6 +134,7 @@
                                         @else
                                           <a id="login" href="/login">Login</a>
       @endif
+          <a id="login" href="/all">pokelist</a>
     </div>
 
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -146,8 +147,18 @@
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
                   <form method="get" action="/show" style="margin-top:5px;">
-                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
+                    <input class="pnp" type="text" class="list-group" name="pokemon" list="pokemons" placeholder="Search">
+                      <datalist id="pokemons">
+                      @foreach(\App\Pokemon::all('name') as $pokemon)
+                        <option  value="{{ $pokemon->name }}">
+                      @endforeach
+                      </datalist>
                   </form>
+                  <p style="color: white;">
+                    <?php if(isset($check)){
+                      echo "Pokemon Not found";
+                    }?>
+                  </p>
                   
                 </div>
               </div>
