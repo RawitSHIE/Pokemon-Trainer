@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ $data->name }}</title>
+        <title>Pokémon - {{ $data->name }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -21,6 +21,9 @@
         <!-- Styles -->
         <style>
             html, body {
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
               color: #636b6f;
               /*font-family: 'Raleway', sans-serif;*/
               font-weight: 100;
@@ -106,6 +109,7 @@
               height: 9px;
               width: 9px;
             }
+
       </style>
 
 
@@ -113,12 +117,26 @@
 
     </head>
     <body background="{{asset('img/poke_bg.jpg')}}">
-      <nav class="topnav">
-          <a id="home" href="/">Home</a>
-          <a id="login" href="{{ route('login') }}">login</a>
-      </nav>
+      <div class="topnav">
+      <a id="home" href="/" >Home</a>
+      @if(Auth::check())
+        <a id="login" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                          <a id="login" href="/console">Edit</a>
+                                        @else
+                                          <a id="login" href="/login">Login</a>
+      @endif
+    </div>
+
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-      <section class="text-center" style="padding-top:4em;">
+      <section class="text-center" style="padding-top:4em; height: 100%;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
         <div class="row" style="padding-top:3%; width: 100%;">
 
@@ -126,23 +144,24 @@
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
-                  <p style="color:#fff; font-size:1.5em;">
-                    Type : {{$data->type_1}}
-                    @if($data->type_2 != "")
-                      , {{ $data->type_2}}
-                    @endif
-                  </p>
+                  <form method="get" action="/show">
+                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
+                  </form>
+                  
                 </div>
               </div>
               <div class="volume"></div>
               <div class="camera"></div>
               <div class="speaker"></div>
-              <div class="screen" style="padding:20px;">
+              <div class="screen" style="padding:30px;">
                 <div>
                   <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
-                  <form method="get" action="/show">
-                    <input class="pnp" type="text" name="pokemon" placeholder="Gotcha!">
-                  </form>
+                  <p style="color:#000; font-size:1.5em;">
+                    Type : {{$data->type_1}}
+                    @if($data->type_2 != "")
+                      , {{ $data->type_2}}
+                    @endif
+                  </p>
                 </div>
               </div>
             </div>

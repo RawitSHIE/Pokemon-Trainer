@@ -164,11 +164,11 @@ video {
 /* search */
 .pnp[type=text] {
     text-align: center;
-    color: black;
+    color: white;
     margin:10px;
     width: 40%;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 20px;
     font-size: 100%;
     background-color: transparent;
@@ -184,13 +184,6 @@ video {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-::-webkit-.pnp-placeholder { /* Chrome/Opera/Safari */
-    color: black;
-
-}
-::-webkit-.pnp-placeholder :focus{ /* Chrome/Opera/Safari */
-    color: black;
-}
 
 /* footer */
 .custom-j div{

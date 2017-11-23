@@ -14,6 +14,7 @@
   <body>
     <!--nav bar -->
     <div class="topnav">
+
     <a id="home" href="/" >Home</a>
     @if(Auth::check())
       <a id="login" href="{{ route('logout') }}"
@@ -30,6 +31,7 @@
                                         <a id="login" href="/login">Login</a>
     @endif
   </div>
+
     <!-- Body -->
     <header class="header" id="top-ab">
       <div class="vertical-center-left">
