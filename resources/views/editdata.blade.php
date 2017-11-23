@@ -38,7 +38,7 @@
 <div class="" style="width:100%; padding:100px">
 
   <div style= "background-color: transparent; text-align:center; margin:20px;" >
-    <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg" style="width:250px;">
+    <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg" style="width:250px;max-width:100%;">
     <p style="color:#000; font-size:1.5em;">
     {{$data->name}}
     </p>
@@ -62,7 +62,7 @@
               <label for="exampleInputEmail1">Species Type</label>
               <input class="form-control" type="text" value="{{ $data->type_1 }}" name="type_1" placeholder="pika?">
               <small id="emailHelp" class="form-text text-muted"></small>
-            </div>
+            </div> 
             <div class="form-group">
               <label for="exampleInputEmail1">Special Type</label>
               <input class="form-control" type="text" value="{{ $data->type_2 }}" name="type_2" placeholder="pika?">

@@ -161,7 +161,6 @@
                   </p>
                 </div>
               </div>
-              <div class="volume"></div>
               <div class="camera"></div>
               <div class="speaker"></div>
               <div class="screen" style="padding:30px;">
@@ -186,10 +185,6 @@
 
       </section>
 
-    <div style=" background-color:black; height:30px; width:100%; align-items:right; color:rgb(255, 255, 255); display: flex;
-    justify-content: center;">
-    Copyright &copy ITF Group
-    </div>
 
 
 

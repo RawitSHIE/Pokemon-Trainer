@@ -136,6 +136,7 @@ video {
     text-align: center;
     color: white;
     width: 20%;
+    min-width: 150px;
     box-sizing: border-box;
     border: 2px solid white;
     border-radius: 20px;
@@ -173,6 +174,7 @@ video {
     color: rgb(255, 255, 255);
     margin:10px;
     width: 40%;
+    min-width: 150px;
     box-sizing: border-box;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
