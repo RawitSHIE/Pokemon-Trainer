@@ -63,7 +63,7 @@
     </header>
 
     <container>
-      <div class="jumbotron propic-row" style="padding:5%; background-color:rgba(255, 255, 255,0)">
+      <div class="jumbotron propic-row" style="padding:5%; background-color:rgb(255, 255, 255)">
       <div class="row" style="
       text-align: center;
       display: flex;
@@ -71,10 +71,12 @@
       align-items: center;
       "> 
           @foreach(\App\Pokemon::all('name') as $pokemon)
-              <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="multiCollapse5">
+              <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%;" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="multiCollapse5">
                   <a href="/show?pokemon={{ $pokemon->name }}">
-                    <img src="{{ asset('img/pokemon_web/'.strtolower($pokemon->name).'.jpg') }}" style=" border-radius: 50%;">
-                      <p style="text-align:center;"><h3 style="margin:0%">{{ $pokemon->name }}</h3></p>
+                  <div style="background-color:white; width:200px; height:200px;">
+                    <img src="{{ asset('img/pokemon_web/'.strtolower($pokemon->name).'.jpg') }}" style="max-height:200px; width:100%">
+                  </div>
+                      <p style="text-align:center;"><h3 style="margin:0%;  text-decoration:none;">{{ $pokemon->name }}</h3></p>
                   </a>
               </div>
           @endforeach
