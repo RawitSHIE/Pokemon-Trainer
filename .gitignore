@@ -13,3 +13,5 @@ yarn-error.log
 
 *.mp4
 **/public/img/pokemon_img
+
+.DS_Store
