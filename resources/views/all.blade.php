@@ -42,7 +42,7 @@
               <h4 style="color:rgb(255, 255, 255)">Gotta catch them all!</h4>
           </div>
           
-          <video id="bgvid audio" playsinline autoplay loop>
+          {{--  <video id="bgvid audio" playsinline autoplay loop>
             <!-- video source -->
               <source src="{{ asset('video/Pokemon.mp4') }}" type="video/mp4">
               <!-- <source src="video\Oscar Nominees 2017 - Best Visual Effects - A Showcase.mp4" type="video/mp4"> -->
@@ -50,8 +50,8 @@
               
 
 
-          {{--    --}}
-          </video>
+
+          </video>  --}}
               <br>
           <div>
           </div>
@@ -72,8 +72,8 @@
       "> 
           @foreach(\App\Pokemon::all('name') as $pokemon)
               <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%;" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="multiCollapse5">
-                  <a href="/show?pokemon={{ $pokemon->name }}">
-                  <div style="background-color:white; width:200px; height:200px;">
+                  <a href="/show?pokemon={{ $pokemon->name }}" style="text-decoration:none;">
+                  <div class="vertical-cen" style="background-color:white; width:200px; height:200px;">
                     <img src="{{ asset('img/pokemon_web/'.strtolower($pokemon->name).'.jpg') }}" style="max-height:200px; width:100%">
                   </div>
                       <p style="text-align:center;"><h3 style="margin:0%;  text-decoration:none;">{{ $pokemon->name }}</h3></p>
