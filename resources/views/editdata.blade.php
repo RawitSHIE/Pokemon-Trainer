@@ -50,67 +50,67 @@
         {{ csrf_field() }}
             <div class="form-group">
               <label for="exampleInputEmail1">Pokemon ID</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->no }}" name="no" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->no }}" name="no" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Pokemon's name</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->name }}" name="name" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->name }}" name="name" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Species Type</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->type_1 }}" name="type_1" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->type_1 }}" name="type_1" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Special Type</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->type_2 }}" name="type_2" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->type_2 }}" name="type_2" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Total</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->total }}" name="total" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->total }}" name="total" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Health Point</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->hp }}" name="hp" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->hp }}" name="hp" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Attack</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text"value="{{ $data->attack }}" name="attack" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text"value="{{ $data->attack }}" name="attack" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Defense</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->defense }}" name="defense" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->defense }}" name="defense" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Special Attack</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->ap_atk }}" name="ap_atk" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->ap_atk }}" name="ap_atk" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Special Defence</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->sp_def }}" name="sp_def" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->sp_def }}" name="sp_def" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Speed</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->speed }}" name="speed" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->speed }}" name="speed" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Generation</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->generation }}" name="generation" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->generation }}" name="generation" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Legendary</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->legendary }}" name="legendary" placeholder="Enter email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" value="{{ $data->legendary }}" name="legendary" placeholder="pika??">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             {{--  <input class="form-control" type="text" value="{{ $data->no }}" name="no">
