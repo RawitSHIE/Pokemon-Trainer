@@ -56,11 +56,11 @@
               <br>
           <form method="get" action="/show">
               <input class="input" type="text" name="pokemon" list="pokemons" placeholder="Search">
-              {{--  <datalist id="pokemons">
-                @foreach($data as $item)
-                  <option value="{{ $item->name }}">
+                <datalist id="pokemons">
+                @foreach(\App\Pokemon::all('name') as $pokemon)
+                  <option value="{{ $pokemon->name }}">
                 @endforeach
-              </datalist>  --}}
+              </datalist>
           </form>
           <p style="color: red;">
             <?php if(isset($check)){
