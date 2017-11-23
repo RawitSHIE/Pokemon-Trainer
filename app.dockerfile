@@ -9,9 +9,8 @@ RUN echo -e 'http://dl-cdn.alpinelinux.org/alpine/edge/main\nhttp://dl-cdn.alpin
 
 COPY composer.lock composer.json package.json yarn.lock /var/www/
 
-RUN php composer.phar install --no-dev --no-scripts && rm composer.phar && yarn
+RUN php composer.phar install --no-dev --no-scripts && rm composer.phar
 
-ADD uploads.ini /usr/local/etc/php/conf.d/uploads.ini
 COPY . /var/www
 RUN chown -R www-data:www-data \
         /var/www/storage \
