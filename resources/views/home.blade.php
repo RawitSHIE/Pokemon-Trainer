@@ -54,8 +54,11 @@
           <form method="get" action="/show">
               <input class="input" type="text" name="pokemon" placeholder="Gotcha!">
           </form>
-          <?php if ($check == 0)
-            echo "พิมพ์ผิดอิงั่ง"?>
+          <p style="color: red;">
+            <?php if(isset($check)){
+              echo "พิมพ์ผิดอิงั่ง";
+            }?>
+          </p>
     </div>
     </header>
 
