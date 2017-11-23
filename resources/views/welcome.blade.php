@@ -140,9 +140,9 @@
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <section class="text-center" style="padding-top:4em; height: 100%;">
         <h1 style="font-weight: 600; color:#fff;">{{ $data->name }}</h1>
-        <div class="row" style="padding-top:3%; width: 100%;">
+        <div class="row" style="padding-top:3%; width: 100%; height:100% auto;">
 
-          <div class="col-sm-6">
+          <div class="col-sm-6" style="height: auto; max-width: 100%;">
             <div class="marvel-device lumia920 red" style="height:60%">
               <div class="top-bar" style="padding-top: 110%;">
                 <div>
@@ -159,7 +159,6 @@
                       echo "Pokemon Not found";
                     }?>
                   </p>
-                  
                 </div>
               </div>
               <div class="volume"></div>
@@ -179,13 +178,15 @@
             </div>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6" style="height: auto;">
             <div class="chart skills"></div>
           </div>
+
         </div>
+
       </section>
 
-    <footer class="jumbotron custom-j">
+    <footer class="jumbotron custom-j" style="position: relative;">
    
       <div class="row">
         <div class="col-sm-4" style="display:flex;
