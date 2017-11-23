@@ -167,7 +167,7 @@
               <div class="speaker"></div>
               <div class="screen" style="padding:30px;">
                 <div>
-                  <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg">
+                  <img style="max-height:250px;" src="{{asset("img/pokemon_web")}}/{{ strtolower($data->name) }}.jpg">
                   <p style="color:#000; font-size:1.5em;">
                     Type : {{$data->type_1}}
                     @if($data->type_2 != "")
