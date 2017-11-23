@@ -38,7 +38,7 @@
 <div class="" style="width:100%; padding:100px">
 
   <div style= "background-color: transparent; text-align:center; margin:20px;" >
-    <img src="{{asset("img/pokemon_web")}}/{{$data->name}}.jpg" style="width:250px;max-width:100%;">
+    <img src="{{asset("img/pokemon_web")}}/{{ strtolower($data->name) }}.jpg" style="width:250px;max-width:100%;">
     <p style="color:#000; font-size:1.5em;">
     {{$data->name}}
     </p>
