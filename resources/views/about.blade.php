@@ -14,9 +14,22 @@
   <body>
     <!--nav bar -->
     <div class="topnav">
-        <a id="home" href="/">Home</a>
-        <a id="login" href="/login">login</a>
-    </div>
+    <a id="home" href="/" >Home</a>
+    @if(Auth::check())
+      <a id="login" href="{{ route('logout') }}"
+                                          onclick="event.preventDefault();
+                                                   document.getElementById('logout-form').submit();">
+                                          Logout
+                                      </a>
+
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                          {{ csrf_field() }}
+                                      </form>
+                                        <a id="login" href="/console">Edit</a>
+                                      @else
+                                        <a id="login" href="/login">Login</a>
+    @endif
+  </div>
     <!-- Body -->
     <header class="header" id="top-ab">
       <div class="vertical-center-left">
