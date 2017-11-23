@@ -117,7 +117,8 @@
 
     </head>
     <body background="{{asset('img/poke_bg.jpg')}}">
-      <div class="topnav">
+      <!--nav bar -->
+    <div class="topnav">
       <a id="home" href="/" >Home</a>
       @if(Auth::check())
         <a id="login" href="{{ route('logout') }}"
