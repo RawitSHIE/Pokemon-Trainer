@@ -10,6 +10,10 @@ class IndexController extends Controller
     public function find(Request $request) {
         $find = $request->input('pokemon');
         $data = Pokemon::where('name', 'like', $find)->first();
-        return view('welcome')->with('data', $data);
+        if($data){
+            return view('welcome')->with('data', $data);            
+        }else{
+            return view('home')->with('check', 0);
+        }
     }
 }
