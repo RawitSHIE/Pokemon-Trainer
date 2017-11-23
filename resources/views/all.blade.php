@@ -70,11 +70,14 @@
       justify-content: center;
       align-items: center;
       "> 
-            <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%" class="btn btn-primary" data-toggle="collapse" href="#multiCollapse5" aria-expanded="false" aria-controls="multiCollapse5">
-                <img src="{{ asset('img/jiw.jpg') }}" style=" border-radius: 50%;">
-                <p style="text-align:center;"><h3 style="margin:0%">Onruethai</h3></p>
-            </div>
-        
+          @foreach(\App\Pokemon::all('name') as $pokemon)
+              <div class="col-lg-2 col-sm-4 col-12 contact-pro" style="width:100%" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="multiCollapse5">
+                  <a href="/show?pokemon={{ $pokemon->name }}">
+                    <img src="{{ asset('img/pokemon_web/'.strtolower($pokemon->name).'.jpg') }}" style=" border-radius: 50%;">
+                      <p style="text-align:center;"><h3 style="margin:0%">{{ $pokemon->name }}</h3></p>
+                  </a>
+              </div>
+          @endforeach
         </div>
         </div>
     </container>
