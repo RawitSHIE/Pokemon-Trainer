@@ -90,7 +90,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Special Attack</label>
-              <input class="form-control" type="text" value="{{ $data->ap_atk }}" name="ap_atk" placeholder="pika?">
+              <input class="form-control" type="text" value="{{ $data->sp_atk }}" name="sp_atk" placeholder="pika?">
               <small id="emailHelp" class="form-text text-muted"></small>
             </div>
             <div class="form-group">
