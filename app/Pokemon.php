@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pokemon extends Model
 {
-    protected $guarded = [];
+    protected $guarded = ['updated_at'];
 }

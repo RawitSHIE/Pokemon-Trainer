@@ -20,7 +20,6 @@ class PokemonController extends Controller
     public function update(Request $request, $id) {
         $update = Pokemon::find($id);
         $update->fill($request->all());
-        $update->updated_at = Carbon::now();
         $update->save();
         return redirect('/console');
     }
